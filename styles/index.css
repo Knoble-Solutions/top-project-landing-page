@@ -1,0 +1,223 @@
+/* /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Document */
+
+:root {
+    --dark-bg-color: #1f2937; /* header and footer */
+    --hero-main-text: #F9FAF8; /* 48px extra-bold */
+    --hero-secondary-text: #E5E7EB; 
+    --header-link-text: #e5e7eb; /* 18px */
+    --header-logo-text: #F9FAF8;
+    --button-color: #3882F6;
+    --call-to-action-bg-color: #3882F6;
+    --information-header-text: #1F2937; /* 36px extra-bold */
+    --quote-section-background-color: #E5e7eb;
+    --quote-text: #1F2937; /* 36px light italic */
+}
+
+body {
+    /* display: flex;
+    /* flex: 1; */
+    /* flex-direction: column; */ */
+    font-family: 'Roboto', sans-serif;
+    padding: 0 13em;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--dark-bg-color);
+}
+
+/* NAVIGATION */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav p{
+    color: var(--header-logo-text);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.nav ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.nav li {
+    color: var(--header-link-text);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* HERO 1 */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-logo-text);
+}
+
+.hero-left {
+    background-color: purple;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.hero-left h1 {
+    color: var(--hero-secondary-text);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-left p {
+    color: var(--hero-secondary-text);
+    font-size: 18px;
+}
+
+.hero-left button {
+    padding: 5px;
+    width: 85px;
+    border: 3px;
+    border-radius: 10%;
+    background-color: var(--button-color);
+} 
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    justify-content: center;
+}
+
+/* Random Info */
+
+.random-info {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 em; */
+    margin-top: 20px;
+
+}
+
+.random-info h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--information-header-text)
+}
+
+.cards-container {
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    text-align: center;
+    max-width: 150px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 2px;;
+}
+
+.square {
+    border: 4px solid var(--button-color);
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* Quote */
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    border: 3px solid red;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+
+.action-container {
+    border: 3px solid red;
+    background-color: var(--call-to-action-bg-color);
+    border-radius: 25%;
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+}
