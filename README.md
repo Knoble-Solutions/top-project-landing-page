@@ -1,16 +1,19 @@
 # The Odin Project Landing Page
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+This is the challenge given at the end of the Odin Project's Flexbox path.
 
-**Link to project:** https://knoble-solutions.github.io/top-project-landing-page
-## How It's Made:
+**Link to project:** 
 
-**Tech used:** HTML + CSS
+https://knoble-solutions.github.io/top-project-landing-page
 
-- will update soon
+**Tech used:** 
+
+- HTML
+- CSS
 
 ## Lessons Learned:
 
-- update coming soon
+- How to layout and structure a landing page primarily using FlexBox.
 
-[alt text]([image_url](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png))
+## Reference Materials
+![Alt text](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png)
 ![Alt text](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/02.png)
