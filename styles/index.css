@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +25,6 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -71,14 +69,14 @@ body {
     /* flex: 1; */
     /* flex-direction: column; */
     font-family: 'Roboto', sans-serif;
-    padding: 0 20%;
+    /* padding: 0 20%; */
 }
 
 /* HEADER */
 
 header {
     background-color: var(--dark-bg-color);
-    padding: 10px 200px;
+    padding: 10px 400px;
 }
 
 /* NAVIGATION */
@@ -97,7 +95,7 @@ header {
 
 .nav ul {
     display: flex;
-    flex-direction: reverse;
+    flex-direction: row;
     gap: 15px;
     list-style-type: none;
 }
@@ -111,11 +109,13 @@ header {
 /* HERO 1 */
 
 .hero {
-    padding: 200px 200px;
+    padding: 150px 400px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--header-logo-text);
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .hero-left {
@@ -123,7 +123,7 @@ header {
     padding-right: 15px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    width: 600px;
     align-items: flex-start;
     gap: 0;
 }
@@ -204,7 +204,6 @@ header {
     background-color: var(--quote-section-background-color);
     justify-content: center;
     align-items: center;
-
 }
 
 .quote {
@@ -232,14 +231,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-   padding: 10% 15%;
+    padding: 150px 15%;
 }
 
 .action-container {
     /* border: 3px solid green; */
     background-color: var(--call-to-action-bg-color);
     border-radius: 2%;
-    padding: 5% 2%;
+    padding: 75px;
     display: flex;
     justify-content: space-around;
     /* flex-shrink: 1; */
@@ -251,12 +250,21 @@ header {
     flex-direction: column;
     gap: 15px;
     /* max-width: 25%; */
+    padding-right: 100px;
 }
 
 .ac-right {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ac-right button {
+    padding: 5px;
+    width: 85px;
+    border: 3px solid white;
+    border-radius: 10%;
+    background-color: var(--button-color);
 }
 
 /*  Footer  */
